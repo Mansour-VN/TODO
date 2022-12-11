@@ -1,5 +1,60 @@
 .App {
   text-align: center;
+
+  &__header {
+
+    h3 {
+      color: white;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__body {
+    margin-top: 4rem;
+    display: flex;
+    gap: 0.5rem;
+
+    select {
+      height: 100%;
+    }
+    
+    &__search-box {
+      display: flex;
+      background-color: white;
+      padding: 0.5rem;
+      gap: 0.5rem;
+    }
+  }
+
+  &__footer {
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__todo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+
+      &__title {
+        font-size: 1.6rem;
+        padding-left: 0.5rem;
+      }
+
+      .todo-done {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .Toastify__toast-body {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: system-ui;
+  }
 }
 
 .App-logo {
